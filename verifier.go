@@ -247,7 +247,7 @@ func (v *Verifier) calculateReachable(s *SMTP) string {
 		return reachableYes
 	}
 	if s.CatchAll {
-		return reachableUnknown
+		return reachableYes
 	}
 	return reachableNo
 }
